@@ -1,0 +1,255 @@
+.nav{
+	height: 70px;
+	background: url('../images/header.png') no-repeat center center;
+	background-size: 100% 100%;
+	padding-left: 46px;
+	font-size: 26px;
+	position: relative;
+	box-shadow: 0 2px 16px #333;
+}
+.nav a{
+	display: inline-block;
+	width: 124px;
+	border-bottom: 6px solid transparent ;
+	line-height: 64px; 
+	text-align: center;
+	color: #ccc;
+	letter-spacing: 3px;
+	margin-right: 46px;
+}
+.nav a.cur{
+	border-bottom: 6px solid #f08300;
+	color: #f08300;
+}
+.back{
+	display: inline-block;
+	width: 32px;
+	height: 24px;
+	background: url('../images/back_01.png') no-repeat center center;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	position: absolute;
+	right: 32px;
+	top: 50%;
+	margin-top: -12px;
+} 
+.content{	
+	overflow: hidden;
+}
+.search{
+	padding: 0 46px;
+	line-height: 80px;
+}
+.select{
+	display: inline-block;
+	position: relative;
+}
+.select span{
+	width: 100%;
+	display: block;
+	line-height: 40px;
+	text-indent: 10px;
+	font-size: 18px;
+	color: #ccc;
+}
+.select select{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.year{
+	width: 90px;
+	height: 40px;
+	background: url('../images/ranking_1.png') no-repeat center center;
+	background-size: 100% 100%;
+	font-size: 16px;
+	margin-right: 8px;
+}
+.month{
+	width: 68px;
+	height: 40px;
+	background: url('../images/ranking_2.png') no-repeat center center;
+	background-size: 100% 100%;
+	font-size: 16px;
+	margin-right: 8px;
+}
+.city{
+	width: 168px;
+	height: 40px;
+	background: url('../images/ranking_3.png') no-repeat center center;
+}
+
+.main{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 570px;
+}
+.left, .right{	
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;	       
+}
+.left{
+	 background: url('../images/hero_bg.png') no-repeat right center;
+}
+.right{
+	 background: url('../images/hero_bg.png') no-repeat left center;
+}
+.tit{
+	padding-top: 20px;
+	line-height: 82px;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #442807;
+}
+.tit span{
+	padding: 0 10px;
+	font-weight: 800;
+	color: #000;
+}
+.conList{
+	width: 406px;
+	height: 450px;
+	/* overflow-y: auto; */
+	margin: 0 auto;
+	font-size: 22px;
+	color: #c9cccc
+}
+.left .tit{
+	transform: translate3d(12px, 0, 0);
+}
+.left .conList{
+	transform: translate3d(12px, 0, 0);
+}
+.right .tit{
+	transform: translate3d(-12px, 0, 0);
+}
+.right .conList{
+	transform: translate3d(-12px, 0, 0);
+}
+.conList li{
+	height: 50px;
+	background: url('../images/ranking_line.png') no-repeat left bottom;
+}
+.conList li.cur{
+	color: #f48005;
+}
+.conList li span{
+	display: inline-block;
+	line-height: 50px;
+	padding-right: 8px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.conList li span:nth-child(1){
+	width: 48px;
+	text-align: center;
+}
+.conList li span:nth-child(2){
+	width: 150px;
+	text-align: center;;
+}
+.conList li span:nth-child(3){
+	width: 90px;
+	text-align: center;;
+}
+.conList li span:nth-child(4){
+	width: 78px;
+	text-align: right;
+}
+.share{
+	text-align: right;
+	padding: 12px 74px 0 0;
+}
+.shareMy{
+	width: 156px; 
+	height: 28px;
+	padding-right: 40px;	
+	background: url('../images/shareMy.png') no-repeat  right bottom;
+	font-size: 18px;
+	color: #282828;
+}
+
+/* sellRanking */
+.sellList{
+	height: 580px;
+	background: url('../images/sellRanking_bg.png') no-repeat top center;
+}
+.sellTit{
+	line-height: 84px;
+	font-size: 30px;
+	color: #171717;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 4px;
+}
+.listConTit, .actList{
+	width: 910px;
+	padding: 0 10px;
+	margin: 0 auto;
+	height: 50px;
+}
+.listCon, .actCon{
+	width: 910px;
+	height: 400px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.listCon li, .actCon li{
+	height: 50px;
+	overflow: hidden;
+}
+.listConTit span, .actList span, .listCon li span, .actCon li span{
+	display: inline-block;
+	line-height: 50px;
+	font-size: 24px;
+	text-align: center;
+	color: #dbdbdb;
+	background: url('../images/sell_line.png') no-repeat top right;	
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.listConTit span:nth-child(1), .listCon li span:nth-child(1){
+	width: 80px;
+}
+.listConTit span:nth-child(2), .listCon li span:nth-child(2){
+	width: 360px;
+	padding: 0 10px;
+
+}
+.listConTit span:nth-child(3), .listCon li span:nth-child(3){
+	width: 150px;
+}
+.listConTit span:nth-child(4), .listCon li span:nth-child(4){
+	width: 150px;
+}
+.listConTit span:nth-child(5), .listCon li span:nth-child(5){
+	width: 150px;
+	background: none;
+}
+/* act */
+.actList span:nth-child(1), .actCon li span:nth-child(1){
+	width: 150px;
+}
+.actList span:nth-child(2), .actCon li span:nth-child(2){
+	width: 480px;
+	padding: 0 10px;
+
+}
+.actList span:nth-child(3), .actCon li span:nth-child(3){
+	width: 260px;
+	background: none;
+}

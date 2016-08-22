@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--允许全屏-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script src="../src/jquery.js"></script>
+    <script src="../src/flexible_css.debug.js"></script>
+    <script src="../src/flexible.debug.js"></script>
+	<title>亲子活动报名</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/yanguan.css">
+
+</head>
+<body>
+	<div class="wrap saveWrap">
+		<div class="bg">
+			<img src="../images/fangan.png" alt="">
+			<div class="mask">
+				<div class="saveMsg">
+					<h2>亲子活动报名</h2>
+					<div class="rows">
+						<label class="tit tit1" for="citys">姓名</label> <input class="msg" type="text"><label class="tit tit1" for="">电话</label> <input class="msg" type="text">
+					</div>
+					<div class="rows" id="global_location">
+						<label class="tit tit1" for="citys">城市</label> <div class="select"><span id="city">深圳市</span><select class="msg city" name="citys" id="citys">
+							<option value ="深圳市">深圳市</option>
+							<option value ="1">1</option>
+							<option value ="2">2</option>
+							<option value ="3">3</option>
+							<option value ="4">4</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+						</select></div><label class="tit tit1" for="citys">活动地址</label> <div class="select address"><span id="city">深圳市</span><select class="msg adds" name="citys" id="citys">
+							<option value ="深圳市">深圳市</option>
+							<option value ="1">1</option>
+							<option value ="2">2</option>
+							<option value ="3">3</option>
+							<option value ="4">4</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+							<option value ="深圳市">深圳市</option>
+						</select></div>
+					</div>
+					<div class="rows">
+					    <label class="tit tit1" for="citys">孩子年龄</label> <input class="age" type="text">
+					    <label class="tit" for="citys">性别</label> <div class="select yn"><span id="city">男</span><select class="msg" name="citys" id="citys">
+							<option value ="男">男</option>
+							<option value ="女">女</option>
+						</select></div>
+					    <label class="tit tit1" for=""">活动时间</label> <input class="msg inDate" id="inDate" type="text" value="2016-06-25">
+					</div>
+					<div class="rows rows1">
+						<label class="tit tit2" for="citys" style="width:70px;">备 注!</label><textarea class="msgArea" name="" id="" cols="30" rows="10"></textarea>
+					</div>
+
+					<span class="confirmBtn btn-2">提交报名信息</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<script src="../src/laydate.dev.js"></script>
+	<script>
+
+		laydate({
+            elem: '#inDate'
+        });
+
+        /* 选择城市 */
+        $('.msg').change(function(){
+        	var html = $(this).val();
+        	$(this).prev('span').html(html);
+        })
+       	
+       	/* 今日时间 */
+       	var mydate = new Date();
+			mydate.getYear(); //获取当前年份(2位)
+		var year = mydate.getFullYear(); //获取完整的年份(4位,1970-????)
+		var month =	mydate.getMonth() + 1; //获取当前月份(0-11,0代表1月)
+		var day = mydate.getDate(); //获取当前日(1-31)
+		month < 10 ? month = '0' + month : month;
+		day < 10 ? day = '0' + day : day;
+		var date = year + '-' + month + '-' + day;
+        $('#inDate').val(date);
+        $('#date').html(date);
+
+	</script>	
+
+	<script src="../js/jquery.cxselect.js"></script>
+	<script type="text/javascript">
+		/* 联动菜单 */
+  		var urlGlobal = '../js/globalData.min.json';
+
+  		$('#global_location').cxSelect({
+		    url: urlGlobal,
+		    selects: ['city', 'adds'],
+		    emptyStyle: 'none'
+		});
+	</script>
+</body>
+</html>

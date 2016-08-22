@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--允许全屏-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script src="../src/jquery.js"></script>
+    <script src="../src/flexible_css.debug.js"></script>
+    <script src="../src/flexible.debug.js"></script>
+	<title>登录</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+	<div class="wrap loginWrap">
+		<div class="list">
+			<h1 class="logo"><!-- logo <--><img src="../images/index_logo.png" alt=""></--></h1>
+			<h2 class="tit"><!-- title <--><img src="../images/index_zhinengchufang.png" alt=""></--></h2>
+			<div class="form">
+				<div class="rows">
+					<input class="userName" type="text" value="" />
+				</div>
+				<div class="rows">
+					<input class="userPsw" type="password" value="" />
+				</div>
+				<div class="rows save">
+					<input class="check" type="checkbox" name="check" id="check" />
+					<label class="msg" for="check"><!-- 保存当前账号和密码 --> </label>
+					<span></span>
+				</div>				
+				<div class="button">
+				</div>
+					<button class="submit">登录</button>
+			</div>
+			<!-- <div class="error">用户名或密码错误</div> -->
+		</div>
+	</div>
+
+	<script>
+		$('.submit').on('click', function() {
+			location.href = './userList.html';
+		})
+	</script>
+</body>
+</html>

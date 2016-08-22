@@ -1,0 +1,105 @@
+.loginWrap{
+	background: url(../images/index_bg.png) no-repeat center center;;
+	background-size: 100% auto;
+}
+.tit{
+	padding: 74px 0;
+	text-align: center;
+}
+.form{
+	width: 100%;
+	text-align: center;
+}
+.rows{
+	width: 260px;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.userName, .userPsw{
+	width: 160px;
+	height: 50px;
+	padding-left: 80px;
+	padding-right: 10px;
+	text-indent: 10px;
+	line-height: 51px;
+	font-size: 24px;
+	border: none;
+}
+.userName{
+	background: url("../images/index_account.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.userName:focus{
+	background: url("../images/index_account1.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.userPsw{
+	background: url("../images/index_password.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.userPsw:focus{
+	background: url("../images/index_password1.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.save{
+	position: relative;
+	height: 50px;
+}
+.save input, .save span{
+	position: absolute;
+	width: 18px;
+	height: 19px;
+	left: 30px;
+}
+.check{
+	z-index: 99;
+	opacity: 0;
+}
+.check ~ span{
+	background: url("../images/index_no_select.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.save input + .msg{
+	width: 162px;
+	height: 17px;
+	position: absolute;
+	left: 62px;
+	background: url("../images/index_save_account.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.save input:checked ~ span{
+	background: url("../images/index_select.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.save input:checked+.msg{
+	background: url("../images/index_save_account1.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.submit{
+	width: 260px;
+	height: 50px;
+	border: none;
+	border-radius: 50px;
+	margin:0; padding:0; 
+	list-style-type:none;
+	font-size: 0;
+	background: url("../images/login_btn1.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.submit:hover{
+	background: url("../images/login_btn2.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.error{
+	width: 100%;
+	line-height: 16px;
+	font-size: 12px;
+	position: relative;
+	top: -90px;
+	color: #333;
+	text-align: center;
+	/* display: none; */
+}
+
+

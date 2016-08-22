@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--允许全屏-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script src="../src/jquery.js"></script>
+    <script src="../src/flexible_css.debug.js"></script>
+    <script src="../src/flexible.debug.js"></script>
+	<title>跟进人员补充内容</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/yanguan.css">
+	<style>
+		.saveMsg{
+			position: relative;
+			transform: translate3d(0, 26px, 0);
+		}
+		.rows{
+			line-height: 80px;
+		}
+		.tit{
+			padding-right: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap saveWrap">
+		<div class="bg">
+			<img src="../images/fangan.png" alt="">
+			<div class="mask">
+				<div class="saveMsg">
+					<h2>跟进人员补充内容</h2>					
+					<div class="rows">
+					    <label class="tit tit4" for=""">预计成交日期:</label><input class="msg inDate" id="inDate" type="text" value="2016-06-25">
+					</div>
+					<div class="rows">
+						<label class="tit tit4" for="citys">楼盘户数:</label><input class="msg" type="text"> <label class="tit tit6" for="citys">楼盘均价:</label><input class="msg" type="text"><label class="msg" for="" style="width:60px;">/元</label>
+					</div>
+					<div class="rows">
+						<label class="tit tit4" for="citys">物业公司名称:</label><input class="msg msg2" type="text">
+					</div>
+					<div class="rows">
+						<label class="tit tit4" for="citys">物业联系方式:</label><input class="msg msg2" type="text">
+					</div>
+					<span class="confirmBtn" style="bottom:40px;">确定补充</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<script src="../src/laydate.dev.js"></script>
+	<script>
+
+		laydate({
+            elem: '#inDate'
+        });
+
+        /* 选择城市 */
+        $('.msg').change(function(){
+        	var html = $(this).val();
+        	$(this).prev('span').html(html);
+        })
+       	
+       	/* 今日时间 */
+       	var mydate = new Date();
+			mydate.getYear(); //获取当前年份(2位)
+		var year = mydate.getFullYear(); //获取完整的年份(4位,1970-????)
+		var month =	mydate.getMonth() + 1; //获取当前月份(0-11,0代表1月)
+		var day = mydate.getDate(); //获取当前日(1-31)
+		month < 10 ? month = '0' + month : month;
+		day < 10 ? day = '0' + day : day;
+		var date = year + '-' + month + '-' + day;
+        $('#inDate').val(date);
+        $('#date').html(date);
+
+	</script>
+</body>
+</html>跟进人员补充内容

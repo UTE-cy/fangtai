@@ -1,0 +1,180 @@
+.nav{
+	padding: 64px 0 14px;
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	text-align: center;
+	color: #282828;
+}
+.con{
+	width: 878px;
+	height: 522px;
+	background: url('../images/sell_bg.png') no-repeat center center;
+	margin: 0 auto;
+	padding-top: 52px;
+	position: relative;
+}
+.con input, .con textarea{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.conList{
+	padding-left: 64px;
+}
+.conList li{
+	line-height: 48px;
+	margin-bottom: 14px;
+}
+.tit{
+	display: inline-block; 
+	width: 120px;
+	font-size: 24px;
+	color: #282828;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	margin-right: 8px;
+	text-align: justify;
+	text-align-last: justify;
+}
+.tit i{
+	opacity: 0;
+}
+.select{
+	width: 153px;
+	height: 48px;
+	display: inline-block;
+	position: relative;
+	background: url('../images/kongjian.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+.select span{
+	width: 100%;
+	display: inline-block;
+	line-height: 38px;
+	text-indent: 10px;
+	font-size: 18px;
+	color: #ccc;
+}
+.select select{
+	position: absolute;
+	width: 100%;
+	height: 48px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.select select option{
+	line-height: 32px;
+}
+.search{
+	display: inline-block;
+	width: 300px;
+	line-height: 40px;
+}
+.search input{
+	display: inline-block;
+	width: 230px;
+	height: 38px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	font-size: 16px;
+	text-indent: 6px;
+	background: none;
+	color: #000;
+	margin-right: 14px;
+}
+.search input:focus{
+	border: 1px solid #f08300;	
+}
+.search label{
+	display: inline-block;
+	line-height: 42px;	
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+	vertical-align: middle;
+}
+input.inDate, input.typeIn{
+	display: inline-block;
+	width: 156px;
+	height: 48px;
+	background: url('../images/kongjian.png') no-repeat center center;
+	background-size: 100% 100%;	
+	font-size: 18px;
+	text-indent: 8px;
+	color: #ccc;
+	vertical-align: middle;
+}
+.phone, .name, .weixin{
+	width: 156px;
+	height: 48px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: url('../images/inp_bg.png') repeat-x left bottom;
+	font-size: 18px;
+	text-indent: 8px;
+	color: #ccc;
+}
+.titP, .titW{	
+	display: inline-block;
+	line-height: 48px;
+	font-size: 24px;
+	color: #282828;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	padding: 0 8px;
+}
+.area{
+	margin-right: 8px;
+}
+.houseName{
+	width: 392px;
+	height: 48px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: url('../images/inp_bg.png') repeat-x left bottom;
+	font-size: 18px;
+	text-indent: 8px;
+	color: #ccc;
+}
+.intention{
+	width: 392px;
+	height: 48px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: url('../images/inp_bg.png') repeat-x left bottom;
+	font-size: 18px;
+	text-indent: 8px;
+	color: #ccc;
+}
+.conList li.area{
+	height: 96px;
+}
+.remark{
+	width: 360px;
+	height: 92px;
+	padding: 2px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: url('../images/line_96.jpg') repeat-x left bottom;
+	font-size: 18px;
+	text-indent: 8px;
+	color: #ccc;
+	line-height: 1.5;
+}
+.titArea{
+	vertical-align: top;
+}
+.sellBtn{
+	position: absolute;
+	width: 280px;
+	line-height: 80px;
+	background: url('../images/button_1.png') no-repeat center center;
+	font-size: 24px;
+	color: #fafafa;
+	letter-spacing: 2px;
+	text-align: center;
+	right: 24px;
+	bottom: 54px;
+}

@@ -1,0 +1,139 @@
+.saveWrap{
+	width: 1024px;
+	height: 768px;
+	position: relative;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .4);
+	padding-top: 80px;
+}
+.saveMsg{
+	width: 850px;
+	height: 544px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255,.6);
+	border-radius:24px;	
+	padding: 24px 32px;
+	box-shadow: 0px 0px 14px #fff;
+}
+.saveMsg h2{
+	text-align: center;
+	color: #1B1A18;
+	font-size: 36px;
+	padding-bottom: 28px;
+}
+.rows{
+	line-height: 70px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.tit{
+	display: inline-block;
+	width: 62px;
+	font-size: 24px;
+	color: #1B1A18;
+	text-align: justify;
+	text-align-last: justify;
+	margin-right: 8px;
+}
+.tit1{
+	width: 110px;
+}
+.tit2{
+	transform: translate3d(0, -110px, 0);
+}
+.tit3{
+	margin-right:28px;
+}
+.msg{
+	width: 156px;
+	margin-right: 12px;
+	display: inline-block;
+	font-size: 20px;
+	text-indent: 12px;
+	color: #1B1A18;
+}
+span.msg{
+	text-align: center;
+	font-weight: 600;
+}
+input.msg{	
+	background: url('../images/inp_bg.png') repeat-x center center;	
+}
+.rows input, .rows select{
+	width: 156px;
+	height: 48px;
+	line-height: 48px;
+	text-indent: 10px;
+	border-radius: 10px;
+	border: 0;
+	background-color: rgba(0, 0, 0, .8);
+	color: #fff;
+	font-size: 20px;
+	box-shadow: 0px 2px 2px #C7C7C7;
+}
+.select{
+	display: inline-block;
+	width: 156px;
+	height: 48px;
+	text-indent: 10px;
+	border-radius: 10px;
+	border: 0;
+	background-color: rgba(0, 0, 0, .2);
+	background: url('../images/kongjian.png') no-repeat center center;
+	background-size: 100% 100%;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 12px;
+	transform: translate3d(0, 16px, 0);
+	overflow: hidden;
+	box-shadow: 0px 2px 2px #C7C7C7;
+}
+.rows input.inDate{
+	background: url('../images/kongjian.png') no-repeat center center;
+	background-size: 100% 100%;	
+	font-size: 18px;
+}
+.select span{
+	display: inline-block;
+	width: 108px;
+	line-height: 48px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.rows select{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0
+}
+.rows select option{
+	font-size: 18px;
+	text-indent: 8px;
+}
+.rows input.msg1{
+	width: 226px;
+}
+.rows1{
+	padding-top: 14px;
+}
+.msgArea{
+	width: 700px;
+	height: 142px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .8);
+	color: #fff;
+	font-size: 20px;
+	text-indent: 16px;
+	line-height: 1.5;
+	box-shadow: 0px 1px 1px #C7C7C7;
+}
+

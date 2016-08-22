@@ -1,0 +1,175 @@
+input::-webkit-input-placeholder { 
+	color: rgba(0,0,0,.6) !important; 
+	letter-spacing: 2px;
+} 
+.nav{
+	height: 70px;
+	background: url('../images/header.png') no-repeat center center;
+	background-size: 100% 100%;
+	padding-left: 46px;
+	font-size: 26px;
+	position: relative;
+	box-shadow: 0 2px 6px #000;
+}
+.nav a{
+	display: inline-block;
+	width: 124px;
+	border-bottom: 6px solid transparent ;
+	line-height: 64px; 
+	text-align: center;
+	color: #ccc;
+	letter-spacing: 3px;
+	margin-right: 46px;
+}
+.nav a.cur{
+	border-bottom: 6px solid #f08300;
+	color: #f08300;
+}
+.back{
+	display: inline-block;
+	width: 32px;
+	height: 24px;
+	background: url('../images/back_01.png') no-repeat center center;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	position: absolute;
+	right: 32px;
+	top: 50%;
+	margin-top: -12px;
+}
+.content{	
+	overflow: hidden;
+}
+.search{
+	padding: 30px 46px;
+	line-height: 50px;
+	background: url('../images/liner.png') repeat-x left bottom;
+}
+.search input{
+	display: inline-block;
+	width: 330px;
+	height: 46px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	font-size: 18px;
+	text-indent: 10px;
+	background: none;
+	color: #000;
+	margin-right: 14px;
+	vertical-align: middle;
+}
+.search input:focus{
+	border: 2px solid #f08300;	
+}
+.search span.searchBtn{
+	display: inline-block;
+	font-size: 24px;
+	color: #000;
+	vertical-align: middle;
+}.search span.searchBtn:hover{
+	color: #f08300;
+}
+.style{
+	margin-right: 26px;
+}
+.type{
+	margin-right: 54px;
+}
+
+
+.conditionMsg{
+	height: 500px;
+	overflow-y: auto;
+}
+.conditionMsg li{
+	height: 50px;
+	padding-left: 46px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #424242;
+	position: relative;
+	overflow: hidden;
+}
+.conditionMsg li span{
+	margin-right: 50px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.conditionMsg li span:nth-child(1){
+	display: inline-block;
+	width: 120px;
+}
+.conditionMsg li span:nth-child(2){
+	display: inline-block;
+	width: 90px;
+}
+.conditionMsg li span:nth-child(3){
+	display: inline-block;
+	width: 140px;
+}
+.conditionMsg li span:nth-child(4){
+	display: inline-block;
+	width: 110px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.conditionMsg li span:nth-child(5){
+	display: inline-block;
+	width: 110px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.conditionMsg li span:nth-child(6){
+	display: inline-block;
+	width: 110px;
+	margin: 0;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.conditionMsg li:nth-child(2n){
+	background-color: rgba(179, 179, 179, .4);
+}
+.conditionMsg li i{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background: url('../images/delete_01.png') no-repeat center center;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	right: 32px;
+	top: 50%;
+	margin-top: -13px;
+}
+.conditionMsg li i:hover{	
+	background: url('../images/delete.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+
+/* ruleHtml */
+.ruleMsg{
+	background: url('../images/liner.png') repeat-x left bottom;
+}
+.btnBox{
+	overflow: hidden;
+	text-align: right;
+	padding-right: 20px;
+}
+.addBtn{
+	display: inline-block;
+	width: 280px;
+	line-height: 80px;
+	background: url('../images/button_1.png') no-repeat center center;
+	font-size: 24px;
+	color: #fafafa;
+	letter-spacing: 2px;
+	text-align: center;
+}

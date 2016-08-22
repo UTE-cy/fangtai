@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--允许全屏-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script src="../src/jquery.js"></script>
+    <script src="../src/flexible_css.debug.js"></script>
+    <script src="../src/flexible.debug.js"></script>
+	<title>积分排名</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/ranking.css">
+
+</head>
+<body>
+	<div class="wrap myClient">
+		<h2 class="nav"><a class="cur" href="#">积分排名</a><a href="sellRanking.html">销售排名</a><a href="activityRanking.html">活动排名</a><span class="back"><!-- back --></span></h2>
+		<div class="content local">			
+			<div class="search">
+				<div class="select year">
+					<span class="">2016</span>
+					<select class="msg" name="" id="">
+						<option value ="2012">2012</option>
+						<option value ="2013">2013</option>
+						<option value ="2014">2014</option>
+						<option value ="2015">2015</option>
+						<option value ="2016">2016</option>
+					</select>
+				</div>
+				<div class="select month">
+					<span class="">01</span>
+					<select class="msg" name="" id="">
+						<option value ="01">01</option>
+						<option value ="02">02</option>
+						<option value ="03">03</option>
+						<option value ="04">04</option>
+						<option value ="05">05</option>
+						<option value ="06">06</option>
+						<option value ="07">07</option>
+						<option value ="08">08</option>
+						<option value ="09">09</option>
+						<option value ="10">10</option>
+						<option value ="11">11</option>
+						<option value ="12">12</option>
+					</select>
+				</div>
+				<div class="select city">
+					<span class="">深圳市</span>
+					<select class="msg" name="" id="">
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+						<option value ="深圳市">深圳市</option>
+					</select>
+				</div>
+			</div>
+			<div class="main">
+				<div class="left">
+					<h2 class="tit">英雄榜</h2>
+					<ul class="conList">
+						<li><span>1.</span><span>深圳市苏宁群星店</span><span>洛天天佑</span><span>1633</span></li>
+						<li><span>2.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>3.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>4.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>5.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>6.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>7.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>8.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>9.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+					</ul>
+				</div>
+				<div class="right">
+					<h2 class="tit">我的当前排名<span>4</span>名</h2><ul class="conList">
+						<li><span>1.</span><span>深圳市苏宁群星店</span><span>洛天天佑</span><span>1633</span></li>
+						<li><span>2.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>3.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li class="cur"><span>4.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>5.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>6.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>7.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>8.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+						<li><span>9.</span><span>深圳市苏宁群星店</span><span>洛天佑</span><span>1633</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="share">
+			<span class="shareMy">分享我的积分排名</span>
+		</div>
+	</div>
+
+	<script>/*
+		$('.nav').on('click', 'a', function() {
+			$(this).addClass('cur').siblings().removeClass('cur');
+		})*/
+		 $('.msg').change(function(){
+        	html = $(this).val();
+        	$(this).prev().html(html);
+        })
+	</script>
+</body>
+</html>

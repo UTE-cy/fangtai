@@ -1,0 +1,167 @@
+.userWrap{
+	background: url("../images/log in_bg.png") no-repeat center center;
+	background-size: 100% auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.userMsg{
+	padding: 20px 0;
+	height: 280px;
+}
+.userMsg p{
+	text-align: center;
+	padding: 6px 0;
+}
+.userHead{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.userHead span{
+	display: inline-block;
+	width: 162px;
+	height: 162px;
+	border-radius: 100%;
+	overflow: hidden;
+	background: url("../images/login_circle.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.userHead span img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.userName{
+	font-size: 20px;
+	color: #282828;
+}
+.count{
+	font-size: 18px;
+}
+.myList:before, .myList:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: url("../images/line.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.myList a{
+	display: block;
+	line-height: 80px;
+	text-align: center;
+	font-size: 24px;
+	color: #282828;
+}
+.myList a:nth-child(2), .myList a:nth-child(3){	
+	background: url("../images/line.png") no-repeat left top;
+	background-size: 100% 2px;
+}
+.logOut{
+	text-align: center;
+	padding: 30px 0;
+	font-size: 18px;
+	color: #282828;
+}
+
+.count{
+	font-size: 18px;
+	color: #757575;
+}
+.conList{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	        padding-top: 60px; 
+}
+.conList a{
+	display: block;
+	width: 280px;
+	height: 80px;
+	font-size: 22px;
+	color: #fafafa;
+	line-height: 80px;
+	text-align: center;
+	background: url("../images/button_2.png") no-repeat center center;
+	background-size: 100% 100%;
+	margin-bottom: 22px;
+}
+.conList a.curList{	
+	background: url("../images/button_1.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.conList a span{
+	font-size: 24px;
+	font-weight: 600;
+}
+.conList a:nth-child(1){ 
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+	-webkit-animation-name: mymove1; /* Safari 和 Chrome */
+	animation-name: mymove1;
+	transform: translate3d(190px, 0, 0);
+}
+@keyframes mymove1{
+	from {transform: translate3d(0, 0, 0);opacity: 0;}
+	to {transform: translate3d(190px, 0, 0);opacity: 1;}
+}
+.conList a:nth-child(2){
+	-webkit-animation-duration: 1.5s;
+  	animation-duration: 1.5s;
+	-webkit-animation-name: mymove2; /* Safari 和 Chrome */
+	animation-name: mymove2;
+	transform: translate3d(300px, 0, 0);
+}
+@keyframes mymove2{
+	from {transform: translate3d(0, 0, 0);opacity: 0;}
+	to {transform: translate3d(300px, 0, 0);opacity: 1;}
+}
+.conList a:nth-child(3){	
+	-webkit-animation-duration: 2s;
+  	animation-duration: 2s;
+	-webkit-animation-name: mymove3; /* Safari 和 Chrome */
+	animation-name: mymove3;
+	transform: translate3d(390px, 0, 0);
+}
+@keyframes mymove3{
+	from {transform: translate3d(0, 0, 0);opacity: 0;}
+	to {transform: translate3d(390px, 0, 0);opacity: 1;}
+}
+.conList a:nth-child(4){
+	-webkit-animation-duration: 2.5s;
+  	animation-duration: 2.5s;
+	-webkit-animation-name: mymove4; /* Safari 和 Chrome */
+	animation-name: mymove4;
+	transform: translate3d(410px, 0, 0);
+}
+@keyframes mymove4{
+	from {transform: translate3d(0, 0, 0);opacity: 0;}
+	to {transform: translate3d(410px, 0, 0);opacity: 1;}
+}
+.conList a:nth-child(5){
+	-webkit-animation-duration: 3s;
+  	animation-duration: 3s;
+	-webkit-animation-name: mymove3; /* Safari 和 Chrome */
+	animation-name: mymove3;
+	transform: translate3d(390px, 0, 0);
+}
+.conList a:nth-child(6){
+	-webkit-animation-duration: 3.5s;
+  	animation-duration: 3.5s;
+	-webkit-animation-name: mymove2; /* Safari 和 Chrome */
+	animation-name: mymove2;
+	transform: translate3d(300px, 0, 0);
+}
+.conList a:nth-child(7){
+	-webkit-animation-duration: 4s;
+  	animation-duration: 4s;
+	-webkit-animation-name: mymove1; /* Safari 和 Chrome */
+	animation-name: mymove1;
+	transform: translate3d(190px, 0, 0);
+}

@@ -1,0 +1,286 @@
+.wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+.qiyeWrap{
+	background: url("../images/bg_02.jpg") no-repeat center center;	
+}
+.list{
+	width: 250px;
+	background: none;
+}
+.con{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	box-sizing: border-box;
+	padding-top: 104px;
+	position: relative;
+}
+/* back */
+.back{
+	width: 32px;
+	height: 24px;
+	position: absolute;
+	right: 30px;
+	top: 42px;
+	background: url("../images/back_01.png") no-repeat center center;
+	z-index: 9999;
+}
+/* end */
+.logoImg img{
+	display: block;
+}
+.nav li{
+	line-height: 94px;
+}
+.nav li a{
+	display: block;
+	width: 220px;
+	font-size: 24px;
+	color: #282828;
+	letter-spacing: 4px;
+	text-align: center;
+	background: #ccc url("../images/liner_01.png") no-repeat left bottom;
+	position: relative;
+	z-index: 9999;
+}
+.nav li.cur{
+	background: url("../images/jiantou.png") no-repeat left center;
+	position: relative;
+	z-index: 999;
+}
+.nav li.cur a{
+	background: none;
+	color: #ccc;
+}
+
+.h2{
+	height: 86px;
+	line-height: 94px;
+	font-size: 30px;
+	color: #f08300;
+	letter-spacing: 4px;
+	overflow: hidden;
+}
+.p{
+	padding-right: 30px;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 2px;
+	color: #999;
+	text-align: justify;
+	margin-bottom: 64px;
+}
+.yinhao{
+	font-size: 24px;
+	color: #ccc;
+}
+
+.content{
+	position: relative;
+}
+.content input{
+	position: absolute;
+	z-index: 999;
+	width: 170px;
+	height: 22px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.content input:checked + label{
+	background: url("../images/icon_01.png") no-repeat right center;
+	color: #f08300;
+}
+.content input:checked + label span{
+	color: #f08300;
+}
+.content label{
+	display: block;
+	width: 130px;
+	height: 22px;
+	font-size: 22px;
+	padding-right: 38px;
+	letter-spacing: 4px;
+	color: #ccc;
+	margin-bottom: 24px;
+	background: url("../images/icon.png") no-repeat right center;
+}
+.label-1, .label-2, .label-3{
+	text-align: justify;
+	text-align-last: justify;
+}
+.content .p-1, .content .p-2, .content .p-3{
+	display: none;
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 44px;
+	letter-spacing: 2px;
+}
+.content input.tabs-1:checked ~ .p-1, .content input.tabs-2:checked ~ .p-2,.content input.tabs-3:checked ~ .p-3{
+	display: block;
+}
+
+/* wenhua */
+.wenhuaWrap{
+	background: url("../images/bg_wenhua.jpg") no-repeat center center;
+}
+.content input.tabs-wh-1{
+	width: 430px;
+}
+.content input.tabs-wh-1+label{
+	width: 410px;	
+	padding-right: 20px;
+}
+.content input.tabs-wh-2{
+	width: 450px;
+}
+.content input.tabs-wh-2+label{
+	width: 430px;	
+	padding-right: 20px;	
+}
+.content input.tabs-wh-3{
+	width: 620px;
+}
+.content input.tabs-wh-3+label{
+	width: 600px;
+	padding-right: 20px;
+}
+.content input:checked+label{
+	color: #f08300;
+}
+.line{
+	letter-spacing: -1px;
+}
+.content label .tit{
+	color: #999;
+	font-size: 20px;
+}
+
+/* pinpai */
+.pinpaiWrap{
+	background: url("../images/bg_pinpai.jpg") no-repeat center center;
+}
+.content a{
+	display: inline-block;
+	height: 60px;
+	line-height: 57px;
+	font-size: 20px;
+	color: #ccc;
+	font-weight: bold;
+	padding-right: 28px;
+	background: url("../images/bg_pinpai_1.png") no-repeat right center;
+	margin-right: 80px;
+}
+.content input.tabs-ppai-1{
+	width: 400px;
+}
+.content input.tabs-ppai-1 + label{
+	width: 380px;
+	padding-right: 20px;
+}
+.content input.tabs-ppai-2{
+	width: 330px;
+}
+.content input.tabs-ppai-2 + label{
+	width: 310px;
+	padding-right: 20px;
+}
+.content input.tabs-ppai-3{
+	width: 424px;
+}
+.content input.tabs-ppai-3 + label{
+	width: 404px;
+	padding-right: 20px;
+}
+
+/* rongyu  yanfa */
+.list{
+	width: 250px;
+}
+.list li{
+	width: 250px;
+	position: relative;
+	z-index: 9999;
+}
+.con1{
+	width: 804px;
+	position: relative;
+	left: -30px;
+}
+.swiper-container {
+   /*  width: 774px; */
+   	width: 804px;
+    height: 768px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+/* .swiper-button-next{
+	width: 32px;
+	height: 24px;
+	//right:50%;
+	//top: 90%;
+	//margin-right: -42px; 
+	background-image: none;
+}
+.swiper-button-prev{
+	width: 32px;
+	height: 24px;
+	//left: 50%;
+	//top: 90%;
+	//margin-left: -42px; 
+	background-image: none;
+}
+.swiper-button-next.swiper-button-white{
+	background-image: none;
+}
+.swiper-button-prev.swiper-button-white{
+	background-image: none;
+} */
+
+/* zeren */
+.zerenWrap{
+	background: url("../images/bg_zeren.png") no-repeat center center;
+}
+.content input.tabs-zr{
+	width: 320px;
+}
+.content label.label-zr{
+	width: 320px;
+	padding: 0;
+	background: none;
+	color: #999;
+} 
+.content input:checked + label.label-zr{
+	background: none;
+	/* color: #f08300; */
+	color: rgba(240, 131, 0, .8);
+}
+.p10{
+	margin-bottom: 10px;
+}
+.c5{
+	color: #5c5c5c;
+}

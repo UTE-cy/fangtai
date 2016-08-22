@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--允许全屏-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script src="../src/jquery.js"></script>
+    <script src="../src/flexible_css.debug.js"></script>
+    <script src="../src/flexible.debug.js"></script>
+	<title>常规客户</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/myClient.css">
+
+</head>
+<body>
+	<div class="wrap myClient">
+		<h2 class="nav"><a href="myClient.html">我的客户</a><a class="cur" href="#">常规客户</a><a href="activityClient.html">活动客户</a><span class="back"><!-- back --></span></h2>
+		<div class="content local">						
+			<div class="search">
+				<input id="search" type="text" placeholder="模糊查询楼盘、客户电话号码" /><span class="searchBtn">查询</span>
+			</div>
+			<ul class="conditionMsg ruleMsg">
+				<li>
+					<span>2016-01-12</span><span>郭XXX</span><span>186xxxxxxxx</span><span>罗湖区</span><span>绿景忠诚天一花园</span><span>常规销售</span>
+				</li>
+				<li>
+					<span>2016-01-12</span><span>郭XXX</span><span>186xxxxxxxx</span><span>罗湖区</span><span>绿景忠诚天一花园</span><span>常规销售</span>
+				</li>
+				<li>
+					<span>2016-01-12</span><span>郭XXX</span><span>186xxxxxxxx</span><span>罗湖区</span><span>绿景忠诚天一花园</span><span>常规销售</span>
+				</li>
+				<li>
+					<span>2016-01-12</span><span>郭XXX</span><span>186xxxxxxxx</span><span>罗湖区</span><span>绿景忠诚天一花园</span><span>常规销售</span>
+				</li>
+				<li>
+					<span>2016-01-12</span><span>郭XXX</span><span>186xxxxxxxx</span><span>罗湖区</span><span>绿景忠诚天一花园</span><span>常规销售</span>
+				</li>
+			</ul>
+			<div class="btnBox"><a class="addBtn" href="sellList.html">增加新用户</a></div>
+		</div>
+	</div>
+
+	<script>/*
+		$('.nav').on('click', 'a', function() {
+			$(this).addClass('cur').siblings().removeClass('cur');
+		})*/
+		//阻止浏览器默认行为触发的通用方法
+		/*function stopDefault(e){
+			if(e && e.preventDefault){
+				//防止浏览器默认行为(W3C)
+				e.preventDefault();
+			}else{//IE中组织浏览器行为
+				window.event.returnValue=fale;
+			}
+			return false;
+		}
+  
+		var btn = $('.addBtn');
+		btn[0].addEventListener('touchstart', function (e) {
+			stopDefault(e);
+			$(this).addClass('cur');
+		});
+
+		btn[0].addEventListener('touchend', function(e) {
+			stopDefault(e);
+			location.href="sellList.html";
+			console.log($(this));
+			$(this).removeClass('cur');
+		});*/
+
+	</script>
+</body>
+</html>

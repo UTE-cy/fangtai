@@ -1,0 +1,171 @@
+.cookWrap{
+	background-color: #FAFAFA;
+	position: relative;
+	background: url("../images/baocun.png") no-repeat center center;
+}
+.cookTit{
+	font-size: 28px;
+	text-align: center;
+	padding: 30px 0;
+	color: #ccc;
+	letter-spacing: 10px;
+}
+.cookList{
+	width: 878px;
+	margin: 0 auto;	
+	display: flex;
+	margin-bottom: 16px;
+}
+.cookType{
+	width: 240px;
+	height: 346px;
+}
+.cookList .cookType:nth-child(1), .cookList .cookType:nth-child(2){
+	margin-right: 78px;
+}
+.types{
+	width: 234px;
+	height: 256px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 2px 2px #ccc;
+	position: relative;
+	margin: 0 auto 4px;
+}
+.types em{
+	position: absolute;
+	width: 108px;
+	height: 22px;
+	left: 16px;
+	top: 10px;
+}
+.types img{
+	width: 234px;
+	height: 214px;
+	display: block;
+}
+.types div{
+	height: 40px;
+	padding-left: 8px;
+	padding-right: 10px;
+	font-size: 20px;
+	display: flex;
+	background: #fff;
+}
+.types div span{
+	flex: 1;
+	font-size: 18px;
+	line-height: 40px;
+	color: #ccc;
+}
+.types div i{
+	display: inline-block;
+	width: 21px;
+	height: 14px;
+	background: url("../images/down.png") no-repeat center center;
+	background-size: 100% 100%;
+	margin-top: 16px;
+	vertical-align: middle;
+}
+
+.types div i.iconCur{	
+	background: url("../images/up.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.typeSize{
+	width: 240px;
+	height: 86px;
+	background: url("../images/chufang_type_bg.png") no-repeat center center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+	position: relative;
+	z-index: 2;
+}
+.typeSize p{
+	width: 236px;
+	margin: 0 auto;
+	line-height: 38px;
+	font-size: 20px;
+	color: #161616;
+	text-align: center;
+}
+.typeSize p:nth-child(1){
+	border-bottom: 1px solid #E0E0E0;
+}
+.typeSize p:nth-child(2){
+	border-top: 1px solid #F9F9F9;
+}
+.typeSize p.cur{
+	background-color: #f08300;
+	color: #fff;
+}
+.typeA{
+	background: url("../images/chufang_A_1.png") no-repeat left center;
+	background-size: auto 100%;
+}
+.typeL{
+	background: url("../images/chufang_L_1.png") no-repeat left center;
+	background-size: auto 100%;
+}
+.typeU{
+	background: url("../images/chufang_U_1.png") no-repeat left center;
+	background-size: auto 100%;
+}
+
+
+.t-cur{
+	border: 1px solid #f08300;
+	box-shadow: 1px 2px 4px #f08300;
+}
+/* .t-cur  div i{	
+	background: url("../images/up.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.t-cur + .typeSize{
+	display: block;
+} */
+
+.cookStyle{
+	position: relative;
+}
+.styleTit{
+	width: 100%;
+	font-size: 28px;	
+    color: #ccc;
+	text-align: center;
+	position: absolute;
+	top: -60px;
+	z-index: 1;
+	letter-spacing: 10px;
+}
+.con{
+	width: 940px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.con ul{	
+	display: flex;
+	transition: all 1s;
+}
+.con ul li{
+	flex: 1;
+}
+.con ul li img{
+	display: block;
+	width: 170px;
+	height: 106px;
+	border: 1px solid #333;
+	box-shadow: 2px 4px 4px #ccc;
+}
+.con ul li.imgCur img{
+	border: 1px solid #f08300;
+	box-shadow: 2px 4px 10px #f08300;
+}
+.con p{
+	padding: 28px 0;
+	font-size: 24px;
+	color: #ccc;
+	letter-spacing: 4px;
+}
+
